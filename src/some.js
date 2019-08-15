@@ -10,4 +10,12 @@ function avg(...arg) {
     return sum(...arg) / arg.length;
 }
 
+export function merge(a, b) {
+    console.log(a, "!!!a");
+    return {
+        ...a,
+        ...b,
+    }
+}
+
 export default avg;
